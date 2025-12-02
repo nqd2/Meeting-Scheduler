@@ -1,6 +1,10 @@
-# 4. CƠ SỞ DỮ LIỆU (MONGODB)
+# 4. CƠ SỞ DỮ LIỆU (MONGODB ONLINE)
 
-Hệ thống sử dụng MongoDB để lưu trữ dữ liệu dưới dạng JSON/BSON. Dưới đây là thiết kế các Collections chính.
+Hệ thống sử dụng **MongoDB Atlas** (Cloud) để lưu trữ dữ liệu dưới dạng JSON/BSON. Việc sử dụng Cloud Database giúp Server C có thể kết nối từ bất kỳ đâu mà không phụ thuộc vào môi trường local.
+
+## 4.0. Cấu hình Kết nối
+- **Connection URI**: `mongodb+srv://<username>:<password>@<cluster>.mongodb.net/?retryWrites=true&w=majority`
+- **Driver**: Sử dụng `mongo-c-driver` để kết nối và thao tác dữ liệu.
 
 ## 4.1. Collection `users`
 Lưu trữ thông tin người dùng.

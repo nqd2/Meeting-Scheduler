@@ -31,6 +31,7 @@ graph LR
 
 ### 2.2.3. Database (MongoDB)
 - **Công nghệ**: MongoDB.
+- **Triển khai**: Sử dụng dịch vụ **MongoDB Atlas** (Cloud Database) để đảm bảo khả năng truy cập từ mọi nơi và dễ dàng tích hợp.
 - **Nhiệm vụ**:
     - Lưu trữ thông tin người dùng (Users).
     - Lưu trữ lịch rảnh (Slots).
