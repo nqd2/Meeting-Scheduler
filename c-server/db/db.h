@@ -6,7 +6,6 @@
 #define C_SERVER_DB_H
 
 #include <mongoc/mongoc.h>
-#include <bson/bcon.h>
 #include <stdbool.h>
 #include <stdint.h>
 

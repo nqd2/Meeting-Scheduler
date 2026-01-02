@@ -1,0 +1,76 @@
+############################
+# JetBrains / CLion
+############################
+.idea/
+*.iml
+
+############################
+# C / CMake / Build
+############################
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+
+build/
+out/
+bin/
+obj/
+
+*.o
+*.a
+*.so
+*.exe
+*.dll
+*.dSYM
+
+############################
+# Node / Electron / Vite
+############################
+node_modules/
+
+dist/
+dist-electron/
+.vite/
+
+release/
+electron-dist/
+out/
+
+############################
+# Package manager logs
+############################
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+############################
+# Environment
+############################
+.env
+.env.*
+!.env.example
+
+############################
+# Cache / Logs
+############################
+.cache/
+.eslintcache
+*.log
+*.tmp
+
+############################
+# Editor
+############################
+.vscode/*
+!.vscode/extensions.json
+
+############################
+# OS
+############################
+.DS_Store
+Thumbs.db
+c-server/.env
+c-server/.env
