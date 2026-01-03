@@ -16,6 +16,23 @@ typedef enum {
     StatusServerError = 5000
 } StatusCode;
 
+typedef enum {
+    CmdUnknown = 0,
+    CmdRegister,
+    CmdLogin,
+    CmdLogout,
+    CmdAddSlot,
+    CmdDeleteSlot,
+    CmdListAppointments,
+    CmdAddMinutes,
+    CmdGetMinutes,
+    CmdBookIndividual,
+    CmdBookGroup,
+    CmdCancelMeeting,
+    CmdListWeekMeetings,
+    CmdListFreeSlots
+} CommandType;
+
 #define MAX_TOKEN_LENGTH 64
 #define MAX_DATA_LENGTH 1024
 #define MAX_COMMAND_LENGTH 32

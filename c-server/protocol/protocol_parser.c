@@ -41,7 +41,7 @@ bool ProtocolParseRequest(const char *rawMessage, Request *outRequest) {
     }
 
     char *saveptr;
-    char *commandStr = strtok_r(buffer, " ", &saveptr);
+    const char *commandStr = strtok_r(buffer, " ", &saveptr);
     if (commandStr == NULL) {
         return false;
     }
@@ -111,7 +111,7 @@ void ProtocolFreeDataParts(char **parts, int count) {
     for (int i = 0; i < count; i++) {
         if (parts[i] != NULL) {
             free(parts[i]);
-            parts[i] = NULL;
+            parts[i] = nullptr;
         }
     }
 }
