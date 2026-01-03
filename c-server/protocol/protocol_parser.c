@@ -111,7 +111,7 @@ void ProtocolFreeDataParts(char **parts, int count) {
     for (int i = 0; i < count; i++) {
         if (parts[i] != NULL) {
             free(parts[i]);
-            parts[i] = nullptr;
+            parts[i] = NULL;
         }
     }
 }

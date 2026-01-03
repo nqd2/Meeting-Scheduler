@@ -41,7 +41,7 @@ void HandleAddSlot(HandlerContext *ctx, const Session *session, const Request *r
     newSlot.StartTime = startTime;
     newSlot.EndTime = endTime;
     newSlot.IsBooked = false;
-    newSlot.CreatedAt = time(nullptr);
+    newSlot.CreatedAt = time(NULL);
 
     bson_oid_t slotId;
     if (!DbCreateSlot(ctx->Db, &newSlot, &slotId)) {

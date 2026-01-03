@@ -36,14 +36,23 @@ void HandleRequest(HandlerContext *ctx, int clientFd, const Request *request, Re
         case CmdDeleteSlot:
             HandleDeleteSlot(ctx, session, request, response);
             break;
+        case CmdListAppointments:
+            HandleListAppointments(ctx, session, request, response);
+            break;
         case CmdListFreeSlots:
             HandleListFreeSlots(ctx, session, request, response);
             break;
         case CmdBookIndividual:
             HandleBookIndividual(ctx, session, request, response);
             break;
+        case CmdBookGroup:
+            HandleBookGroup(ctx, session, request, response);
+            break;
         case CmdCancelMeeting:
             HandleCancelMeeting(ctx, session, request, response);
+            break;
+        case CmdListWeekMeetings:
+            HandleListWeekMeetings(ctx, session, request, response);
             break;
         case CmdAddMinutes:
             HandleAddMinutes(ctx, session, request, response);
