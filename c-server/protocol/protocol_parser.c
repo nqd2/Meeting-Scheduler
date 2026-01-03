@@ -41,7 +41,7 @@ bool ProtocolParseRequest(const char *rawMessage, Request *outRequest) {
     }
 
     char *saveptr;
-    char *commandStr = strtok_r(buffer, " ", &saveptr);
+    const char *commandStr = strtok_r(buffer, " ", &saveptr);
     if (commandStr == NULL) {
         return false;
     }
